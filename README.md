@@ -106,8 +106,6 @@ Class | Method | HTTP request | Description
 *ArgoApi* | [**refresh_workflow_refresh_get**](docs/ArgoApi.md#refresh_workflow_refresh_get) | **GET** /refresh | Refresh Workflow
 *ArgoApi* | [**refresh_workflow_refresh_workflow_id_get**](docs/ArgoApi.md#refresh_workflow_refresh_workflow_id_get) | **GET** /refresh/{workflow_id} | Refresh Workflow
 *ArgoApi* | [**submissions_submissions_get**](docs/ArgoApi.md#submissions_submissions_get) | **GET** /submissions | Submissions
-*ArgoApi* | [**submit_nwm1_submit_nwm1_post**](docs/ArgoApi.md#submit_nwm1_submit_nwm1_post) | **POST** /submit/nwm1 | Submit Nwm1
-*ArgoApi* | [**submit_nwm2_submit_nwm2_post**](docs/ArgoApi.md#submit_nwm2_submit_nwm2_post) | **POST** /submit/nwm2 | Submit Nwm2
 *ArgoApi* | [**submit_nwm_submit_nwm_post**](docs/ArgoApi.md#submit_nwm_submit_nwm_post) | **POST** /submit/nwm | Submit Nwm
 *ArgoApi* | [**submit_parflow_submit_parflow_post**](docs/ArgoApi.md#submit_parflow_submit_parflow_post) | **POST** /submit/parflow | Submit Parflow
 *AuthApi* | [**oauth_oauth2_jwt_authorize_auth_cuahsi_authorize_get**](docs/AuthApi.md#oauth_oauth2_jwt_authorize_auth_cuahsi_authorize_get) | **GET** /auth/cuahsi/authorize | Oauth:Oauth2.Jwt.Authorize
@@ -142,6 +140,7 @@ Class | Method | HTTP request | Description
  - [HTTPValidationError](docs/HTTPValidationError.md)
  - [HydroShareMetadata](docs/HydroShareMetadata.md)
  - [LogsResponseModel](docs/LogsResponseModel.md)
+ - [NWMVersionEnum](docs/NWMVersionEnum.md)
  - [OAuth2AuthorizeResponse](docs/OAuth2AuthorizeResponse.md)
  - [PhaseEnum](docs/PhaseEnum.md)
  - [Submission](docs/Submission.md)

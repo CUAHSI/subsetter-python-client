@@ -24,6 +24,7 @@ from openapi_client.models.geo_json_geometry import GeoJsonGeometry
 from openapi_client.models.http_validation_error import HTTPValidationError
 from openapi_client.models.hydro_share_metadata import HydroShareMetadata
 from openapi_client.models.logs_response_model import LogsResponseModel
+from openapi_client.models.nwm_version_enum import NWMVersionEnum
 from openapi_client.models.o_auth2_authorize_response import OAuth2AuthorizeResponse
 from openapi_client.models.phase_enum import PhaseEnum
 from openapi_client.models.submission import Submission

@@ -10,8 +10,6 @@ Method | HTTP request | Description
 [**refresh_workflow_refresh_get**](ArgoApi.md#refresh_workflow_refresh_get) | **GET** /refresh | Refresh Workflow
 [**refresh_workflow_refresh_workflow_id_get**](ArgoApi.md#refresh_workflow_refresh_workflow_id_get) | **GET** /refresh/{workflow_id} | Refresh Workflow
 [**submissions_submissions_get**](ArgoApi.md#submissions_submissions_get) | **GET** /submissions | Submissions
-[**submit_nwm1_submit_nwm1_post**](ArgoApi.md#submit_nwm1_submit_nwm1_post) | **POST** /submit/nwm1 | Submit Nwm1
-[**submit_nwm2_submit_nwm2_post**](ArgoApi.md#submit_nwm2_submit_nwm2_post) | **POST** /submit/nwm2 | Submit Nwm2
 [**submit_nwm_submit_nwm_post**](ArgoApi.md#submit_nwm_submit_nwm_post) | **POST** /submit/nwm | Submit Nwm
 [**submit_parflow_submit_parflow_post**](ArgoApi.md#submit_parflow_submit_parflow_post) | **POST** /submit/parflow | Submit Parflow
 
@@ -449,166 +447,6 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **submit_nwm1_submit_nwm1_post**
-> SubmissionResponseModel submit_nwm1_submit_nwm1_post(y_south, x_west, y_north, x_east)
-
-Submit Nwm1
-
-### Example
-
-* OAuth Authentication (OAuth2PasswordBearer):
-
-```python
-import openapi_client
-from openapi_client.models.submission_response_model import SubmissionResponseModel
-from openapi_client.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to https://subsetter-api-jbzfw6l52q-uc.a.run.app
-# See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://subsetter-api-jbzfw6l52q-uc.a.run.app"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
-# Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = openapi_client.ArgoApi(api_client)
-    y_south = 3.4 # float | 
-    x_west = 3.4 # float | 
-    y_north = 3.4 # float | 
-    x_east = 3.4 # float | 
-
-    try:
-        # Submit Nwm1
-        api_response = api_instance.submit_nwm1_submit_nwm1_post(y_south, x_west, y_north, x_east)
-        print("The response of ArgoApi->submit_nwm1_submit_nwm1_post:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling ArgoApi->submit_nwm1_submit_nwm1_post: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **y_south** | **float**|  | 
- **x_west** | **float**|  | 
- **y_north** | **float**|  | 
- **x_east** | **float**|  | 
-
-### Return type
-
-[**SubmissionResponseModel**](SubmissionResponseModel.md)
-
-### Authorization
-
-[OAuth2PasswordBearer](../README.md#OAuth2PasswordBearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Successful Response |  -  |
-**422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **submit_nwm2_submit_nwm2_post**
-> SubmissionResponseModel submit_nwm2_submit_nwm2_post(y_south, x_west, y_north, x_east)
-
-Submit Nwm2
-
-### Example
-
-* OAuth Authentication (OAuth2PasswordBearer):
-
-```python
-import openapi_client
-from openapi_client.models.submission_response_model import SubmissionResponseModel
-from openapi_client.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to https://subsetter-api-jbzfw6l52q-uc.a.run.app
-# See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://subsetter-api-jbzfw6l52q-uc.a.run.app"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
-# Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = openapi_client.ArgoApi(api_client)
-    y_south = 3.4 # float | 
-    x_west = 3.4 # float | 
-    y_north = 3.4 # float | 
-    x_east = 3.4 # float | 
-
-    try:
-        # Submit Nwm2
-        api_response = api_instance.submit_nwm2_submit_nwm2_post(y_south, x_west, y_north, x_east)
-        print("The response of ArgoApi->submit_nwm2_submit_nwm2_post:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling ArgoApi->submit_nwm2_submit_nwm2_post: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **y_south** | **float**|  | 
- **x_west** | **float**|  | 
- **y_north** | **float**|  | 
- **x_east** | **float**|  | 
-
-### Return type
-
-[**SubmissionResponseModel**](SubmissionResponseModel.md)
-
-### Authorization
-
-[OAuth2PasswordBearer](../README.md#OAuth2PasswordBearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Successful Response |  -  |
-**422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **submit_nwm_submit_nwm_post**
 > SubmissionResponseModel submit_nwm_submit_nwm_post(y_south, x_west, y_north, x_east, model_version)
 
@@ -620,6 +458,7 @@ Submit Nwm
 
 ```python
 import openapi_client
+from openapi_client.models.nwm_version_enum import NWMVersionEnum
 from openapi_client.models.submission_response_model import SubmissionResponseModel
 from openapi_client.rest import ApiException
 from pprint import pprint
@@ -645,7 +484,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     x_west = 3.4 # float | 
     y_north = 3.4 # float | 
     x_east = 3.4 # float | 
-    model_version = 'model_version_example' # str | 
+    model_version = openapi_client.NWMVersionEnum() # NWMVersionEnum | 
 
     try:
         # Submit Nwm
@@ -667,7 +506,7 @@ Name | Type | Description  | Notes
  **x_west** | **float**|  | 
  **y_north** | **float**|  | 
  **x_east** | **float**|  | 
- **model_version** | **str**|  | 
+ **model_version** | [**NWMVersionEnum**](.md)|  | 
 
 ### Return type
 
